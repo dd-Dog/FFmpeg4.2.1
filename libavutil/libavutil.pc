@@ -1,0 +1,14 @@
+prefix=/home/bianjb/software/ffmpeg/
+exec_prefix=${prefix}
+libdir=/home/bianjb/software/ffmpeg//lib
+includedir=/home/bianjb/software/ffmpeg//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

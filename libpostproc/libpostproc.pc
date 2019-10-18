@@ -1,0 +1,14 @@
+prefix=/home/bianjb/software/ffmpeg/
+exec_prefix=${prefix}
+libdir=/home/bianjb/software/ffmpeg//lib
+includedir=/home/bianjb/software/ffmpeg//include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.5.100
+Requires: libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm
+Libs.private: 
+Cflags: -I${includedir}

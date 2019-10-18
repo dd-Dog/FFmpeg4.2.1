@@ -1,0 +1,14 @@
+prefix=/home/bianjb/software/ffmpeg/
+exec_prefix=${prefix}
+libdir=/home/bianjb/software/ffmpeg//lib
+includedir=/home/bianjb/software/ffmpeg//include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.54.100
+Requires: libswresample >= 3.5.100, libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
